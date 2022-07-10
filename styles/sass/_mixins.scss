@@ -1,0 +1,220 @@
+@mixin flex ($direction:column){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin nav__a {
+    text-decoration: none;
+    color: $a-color;
+    transition: all .15s;
+    font-family: 'Rowdies', cursive;
+    &:hover{
+        color: $a-color-hover;
+    }
+}
+
+@mixin menu-portatil {
+    @media screen and (max-width: $portatil) {
+        left: 63vw;
+        top: 11.75%;
+    }
+}
+
+@mixin aside-portatil {
+    @media screen and (max-width: $portatil) {
+        padding: 2% 1% 2% 0;
+    }
+}
+
+@mixin header-tablet {
+    @media screen and (max-width: $tablet) {
+        margin: .6%;
+        width: calc($full - 1.25%);
+    }
+}
+
+@mixin a1-tablet {
+    @media screen and (max-width: $tablet) {
+        font-size: 1em;
+    }
+}
+
+@mixin a2-tablet {
+    @media screen and (max-width: $tablet) {
+        font-size: .95em;
+    }
+}
+
+@mixin menu-tablet {
+    @media screen and (max-width: $tablet) {
+        left: 65vw;
+        top: 11.5%;
+    }
+}
+
+@mixin aside-tablet {
+    @media screen and (max-width: $tablet) {
+        padding: 2% 2% 2% 0;
+        left: .6vw;
+    }
+}
+
+@mixin h3-tablet {
+    @media screen and (max-width: $tablet) {
+        left: 1%;
+        margin-top: 5%;
+        font-size: 1.1em;
+    }
+}
+
+@mixin a-tablet {
+    @media screen and (max-width: $tablet) {
+        font-size: 1em;
+    }
+}
+
+@mixin header-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        width: calc($full - 2%);
+        margin: 1%;
+    }
+}
+
+@mixin a1-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        font-size: .8em;
+    }
+}
+
+@mixin li1-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        right: 2.5vw;
+    }
+}
+
+@mixin menu-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        width: 30%;
+        left: 65.5vw;
+        top: 11.35%;
+    }
+}
+
+@mixin a2-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        font-size: .75em;
+    }
+}
+
+@mixin aside-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        padding: 2% 6% 2% 0;
+        left: 1vw;
+    }
+}
+
+@mixin h3-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        left: 5%;
+        margin-top: 8%;
+        font-size: 1em;
+    }
+}
+
+@mixin a-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        font-size: .9em;
+    }
+}
+
+@mixin ul-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        transform: translateY(-3%);
+    }
+}
+
+@mixin top-bpc-mobile-L {
+    @media screen and (max-width: $mobile-L) {
+        top: .3em;
+    }
+}
+
+@mixin margin-li-mobile-L{
+    @media screen and (max-width: $mobile-L) {
+        margin: .6em 0;
+    }
+}
+
+@mixin menu-mobile-M {
+    @media screen and (max-width: $mobile-M) {
+        left: 69%;
+    }
+}
+
+@mixin top-bpc-mobile-M {
+    @media screen and (max-width: $mobile-M) {
+        top: .3em;
+    }
+}
+
+@mixin margin-li-mobile-M{
+    @media screen and (max-width: $mobile-M) {
+        margin: .5em 0;
+    }
+}
+
+@mixin header-mobile-S{
+    @media screen and (max-width: $mobile-S) {
+        width: calc($full + 4%);
+        margin: 1.5%;
+    }
+}
+
+@mixin a1-mobile-S{
+    @media screen and (max-width: $mobile-S) {
+        font-size: .75em;
+    }
+}
+
+@mixin menu-mobile-S {
+    @media screen and (max-width: $mobile-S) {
+        left: 75.5%;
+        top: 11.75%;
+        width: 30vw;
+    }
+}
+
+@mixin h3-mobile-S{
+    @media screen and (max-width: $mobile-S) {
+        top: 3vh;
+        margin-top: 1%;
+        margin-bottom: 17.5%;
+        font-size: .9em;
+    }
+}
+
+@mixin a-mobile-S {
+    @media screen and (max-width: $mobile-S) {
+        font-size: .75em;
+    }
+}
+
+@mixin top-bpc-mobile-S {
+    @media screen and (max-width: $mobile-S) {
+        top: .4em;
+    }
+}
+
+@mixin margin-li-mobile-S{
+    @media screen and (max-width: $mobile-S) {
+        margin: .4em 0;
+    }
+}
+
+@mixin aside-mobile-S{
+    @media screen and (max-width: $mobile-S) {
+        left: 2%;
+    }
+}

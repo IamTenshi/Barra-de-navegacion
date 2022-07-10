@@ -1,0 +1,77 @@
+header{
+    @include flex(row);
+    width: calc($full - 1%);
+    height: 10vh;
+    background-color: $blanco025;
+    margin: .5%;
+    border-radius: 10px;
+    @include header-tablet;
+    @include header-mobile-L;
+    @include header-mobile-S;
+
+    nav{
+        @include flex(row);
+        width: calc($full - 1%);
+        height: 8vh;
+
+        ul{
+            @include flex(row);
+            height: $full;
+            width: $full;
+
+            li{
+                margin: 0 5vw 0 0;
+                list-style: none;
+                position: relative;
+                @include li1-mobile-L;
+                
+                a{
+                    @include nav__a;
+                    font-size: 1.25em;
+                    @include a1-tablet;
+                    @include a1-mobile-L;
+                    @include a1-mobile-S;
+                }
+            }
+        }
+    }
+
+    .menu{
+        @include flex;
+        background-color: $blanco025;
+        width: 20%;
+        position: absolute;
+        top: 12.5%;
+        left: 59.5vw;
+        border-radius: 10px;
+        @include menu-portatil;
+        @include menu-tablet;
+        @include menu-mobile-L;
+        @include menu-mobile-M;
+        @include menu-mobile-S;
+
+
+        ul{
+            @include flex;
+            width: calc($full - 5vw);
+            padding: 5%;
+
+            li{
+                list-style: none;
+                position: relative;
+                margin: 7.5%;
+
+                a{
+                    @include nav__a;
+                    font-size: 1.1em;
+                    @include a2-tablet;
+                    @include a2-mobile-L;
+                }
+            }
+        }
+    }
+}
+
+.active{
+    transform: translateY(-100vh);
+}

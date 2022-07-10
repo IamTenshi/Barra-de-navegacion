@@ -1,0 +1,80 @@
+aside{
+    background-color: $blanco025;
+    min-width: 20vw;
+    max-height: 60vh;
+    border-radius: 10px;
+    position: absolute;
+    left: .5vw;
+    @include flex;
+    padding: 2% 0;
+    @include aside-portatil;
+    @include aside-tablet;
+    @include aside-mobile-L;
+    @include aside-mobile-S;
+
+    h3{
+        position: relative;
+        margin-top: 0;
+        color: $a-color-hover;
+        font-family: 'Rowdies', cursive;
+        font-size: 1.25em;
+        @include h3-tablet;
+        @include h3-mobile-L;
+        @include h3-mobile-S;
+    }
+
+    nav{
+        margin-top: -1.5vh;
+
+        ul{
+            position: relative;
+            right: 1.5vw;
+            @include ul-mobile-L;
+            li{
+                margin: .8em 0;
+                @include margin-li-mobile-S;
+                @include margin-li-mobile-M;
+                @include margin-li-mobile-L;
+                list-style: none;
+                a{
+                    @include nav__a;
+                    font-size: 1.1em;
+                    @include a-tablet;
+                    @include a-mobile-L; 
+                    @include a-mobile-S;
+
+                    .bi-person-circle{
+                        position: relative;
+                        top: .2em;
+                        @include top-bpc-mobile-L;
+                        @include top-bpc-mobile-M;
+                        @include top-bpc-mobile-S;
+                    }
+                }
+            }
+        }
+    }
+
+    .chevron-compacts{
+        display: flex;
+        align-items: center;
+        border-radius: 0 10px 10px 0;
+        position: absolute;
+        left: 100%;
+        width: 2em;
+        height: 3.5em;
+        background-color: $blanco02;
+
+        &:hover{
+            background-color: $blanco015;
+        }
+    }
+}
+
+.contacts{
+    transform: translateX(-103.5%);
+}
+
+.chevron-left{
+    display: none;
+}
